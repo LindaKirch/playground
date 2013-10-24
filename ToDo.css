@@ -16,13 +16,24 @@ h1 {
   margin: auto;
   padding: 15px;
   border: 1px solid #ccc;
-  border-top: 20px solid black;
+  border-top: 20px solid red;
 }
 
 .wide {
-  width: 100%;
+    border-color: 20;
+    width: 100%;
     font-size: 24px;
     font-style:italic;
+}
+
+.remaining {
+      float:left;
+      text-align: left;
+}
+
+.show-all, .show-active, .show-complete {
+	position: relative;
+    right:-280px;    
 }
 
 .hide {
@@ -43,6 +54,7 @@ h1 {
   height: 25px;
 }
 .todo-item span {
+  color: solid red;
   margin: 10px 5px;
 }
 .todo-item label,

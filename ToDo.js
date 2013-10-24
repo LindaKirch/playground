@@ -35,7 +35,7 @@ var app = {
   }, 
   toggleStatus: function(ev) {
     $(ev.target).closest('.todo-item').toggleClass('complete');
-    app.updateRemaining();
+    app.updateItemLeft();
   },
   beginEdit: function(ev) {
     var todo = $(ev.target).closest('.todo-item');
